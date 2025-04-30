@@ -1,0 +1,17 @@
+---
+const { bgColor, borderColor, ...rest } = Astro.props;
+---
+<a
+  {...rest}
+  target="_blank"
+  rel="noopener noreferrer"
+  class={`inline-flex items-center w-full max-w-xs px-6 py-3 border-2 
+    rounded-xl shadow-sm transition-all duration-300
+    hover:shadow-md hover:-translate-y-1
+    focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2
+    ${bgColor} ${borderColor}`}
+>
+  <div class="flex items-center gap-3">
+    <slot />
+  </div>
+</a>

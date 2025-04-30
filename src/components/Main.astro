@@ -1,0 +1,124 @@
+---
+import SocialButton from "./SocialButton.astro";
+import MailIcon from "../components/icons/Mail.astro";
+import YoutubeIcon from "../components/icons/YouTube.astro";
+import GitHubIcon from "./icons/GitHub.astro";
+import LinkedInIcon from "./icons/LinkedIn.astro";
+import InstagramIcon from "./icons/Instagram.astro";
+import UrlIcon from "./icons/Link.astro";
+---
+
+<div
+  id="presentacion"
+  class="min-h-screen pt-12 md:pt-24 px-4 relative max-w-screen-lg mx-auto bg-gradient-to-b from-sky-50 to-white"
+>
+  <div class="flex flex-col items-center">
+    <!-- Profile Image -->
+    <div class="mb-8 relative group">
+      <div
+        class="absolute -inset-1 bg-gradient-to-r from-sky-400 to-emerald-400 rounded-full blur opacity-30 group-hover:opacity-50 transition duration-1000"
+      >
+      </div>
+      <img
+        src="/dev.webp"
+        class="w-64 h-64 md:w-72 md:h-72 object-cover rounded-full shadow-xl ring-4 ring-white transition-transform duration-300 hover:scale-105"
+        alt="Ronaldo Jiménez"
+      />
+    </div>
+
+    <!-- Name & Title -->
+    <h1
+      class="text-3xl md:text-5xl font-bold text-center mb-2 bg-gradient-to-r from-sky-600 to-emerald-600 bg-clip-text text-transparent"
+    >
+      Ronaldo Jiménez
+    </h1>
+
+    <div class="flex items-center gap-2 mb-6">
+      <span class="text-sky-600">●</span>
+      <h2 class="text-xl md:text-2xl font-medium text-gray-700">
+        Software Engineer
+      </h2>
+      <span class="text-emerald-500">●</span>
+    </div>
+
+    <!-- Profile Info -->
+    <div class="max-w-2xl text-center mb-8 space-y-3 px-4">
+      <div class="flex justify-center items-center gap-3 text-gray-600">
+        <span>📍 Cali, Colombia</span>
+        <span class="text-2xl">→</span>
+        <span>🏝 Mallorca, España</span>
+      </div>
+
+      <div class="flex items-center justify-center gap-2">
+        <div
+          class="px-3 py-1 bg-sky-100 text-sky-700 rounded-full text-sm font-medium"
+        >
+          🚀 5+ años de experiencia
+        </div>
+        
+      </div>
+
+      <p class="text-gray-600 leading-relaxed mt-4">
+        Ingeniero Informático apasionado por el desarrollo de software y la
+        docencia tecnológica. Especializado en crear soluciones innovadoras y
+        compartir conocimiento para impulsar el crecimiento en el sector tech.
+        Siempre buscando nuevos retos para transformar ideas en realidad.
+      </p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="w-full max-w-2xl space-y-4">
+      <div class="flex flex-wrap justify-center gap-3">
+        <!-- Web Personal -->
+        <SocialButton
+          href="https://www.jimcostdev.com/"
+          bgColor="hover:bg-emerald-600/10"
+          borderColor="border-emerald-600"
+        >
+          <UrlIcon class="size-5 md:size-6 text-emerald-600" />
+          <span class="text-emerald-600 font-medium">JimcostDev</span>
+        </SocialButton>
+
+        <!-- LinkedIn -->
+        <SocialButton
+          href="https://www.linkedin.com/in/ronaldo-jimenez"
+          bgColor="hover:bg-blue-600/10"
+          borderColor="border-blue-600"
+        >
+          <LinkedInIcon class="size-5 md:size-6 text-blue-600" />
+          <span class="text-blue-600 font-medium">LinkedIn</span>
+        </SocialButton>
+
+        <!-- YouTube -->
+        <SocialButton
+          href="https://www.youtube.com/@jimcostdev?sub_confirmation=1"
+          bgColor="hover:bg-red-600/10"
+          borderColor="border-red-600"
+        >
+          <YoutubeIcon class="size-5 md:size-6 text-red-600" />
+          <span class="text-red-600 font-medium">YouTube</span>
+        </SocialButton>
+
+        <!-- GitHub -->
+        <SocialButton
+          href="https://github.com/JimcostDev"
+          bgColor="hover:bg-gray-900/10"
+          borderColor="border-gray-900"
+        >
+          <GitHubIcon class="size-5 md:size-6 text-gray-900" />
+          <span class="text-gray-900 font-medium">GitHub</span>
+        </SocialButton>
+    
+        <!-- Instagram -->
+        <SocialButton
+          href="https://www.instagram.com/jimcostdev/"
+          bgColor="hover:bg-rose-500/10"
+          borderColor="border-rose-500"
+        >
+          <InstagramIcon class="size-5 md:size-6 text-rose-500" />
+          <span class="text-rose-500 font-medium">Instagram</span>
+        </SocialButton>
+      </div>
+    </div>
+  </div>
+</div>
