@@ -5,6 +5,7 @@ import GitHubIcon from "./icons/GitHub.astro";
 import LinkedInIcon from "./icons/LinkedIn.astro";
 import InstagramIcon from "./icons/Instagram.astro";
 import UrlIcon from "./icons/Link.astro";
+import GoIcon from "./icons/Go.astro";
 ---
 
 <div
@@ -15,12 +16,12 @@ import UrlIcon from "./icons/Link.astro";
     <!-- Profile Image -->
     <div class="mb-8 relative group">
       <div
-        class="absolute -inset-1 bg-gradient-to-r from-sky-400 to-sky-600 rounded-full blur opacity-30 group-hover:opacity-50 transition duration-1000"
+        class="absolute -inset-1 bg-gradient-to-r from-sky-300 to-blue-400 rounded-full blur opacity-30 group-hover:opacity-50 transition duration-1000"
       >
       </div>
       <img
         src="/dev.webp"
-        class="w-64 h-64 md:w-72 md:h-72 object-cover rounded-full shadow-xl ring-4 ring-white transition-transform duration-300 hover:scale-105"
+        class="w-64 h-64 md:w-72 md:h-72 object-cover rounded-full shadow-xl ring-2 ring-sky-50 transition-transform duration-300 hover:scale-105"
         alt="Ronaldo Jiménez"
       />
     </div>
@@ -79,16 +80,16 @@ import UrlIcon from "./icons/Link.astro";
           <span class="text-blue-600 font-medium">LinkedIn</span>
         </SocialButton>
 
-        <!-- YouTube -->
+        <!-- Go.Curso -->
         <SocialButton
-          href="https://www.youtube.com/@jimcostdev?sub_confirmation=1"
-          bgColor="hover:bg-red-600/10"
-          borderColor="border-red-600"
+          href="https://golang.jimcostdev.com/"
+          bgColor="hover:bg-sky-400/10"
+          borderColor="border-sky-400"
         >
-          <YoutubeIcon class="size-5 md:size-6 text-red-600" />
-          <span class="text-red-600 font-medium">YouTube</span>
+          <GoIcon class="size-6 md:size-7 text-sky-400" />
+          <span class="text-sky-400 font-medium">Te enseño a programar</span>
         </SocialButton>
-
+        
         <!-- GitHub -->
         <SocialButton
           href="https://github.com/JimcostDev"
@@ -97,6 +98,16 @@ import UrlIcon from "./icons/Link.astro";
         >
           <GitHubIcon class="size-5 md:size-6 text-gray-900" />
           <span class="text-gray-900 font-medium">GitHub</span>
+        </SocialButton>
+
+        <!-- YouTube -->
+        <SocialButton
+          href="https://www.youtube.com/@jimcostdev?sub_confirmation=1"
+          bgColor="hover:bg-red-600/10"
+          borderColor="border-red-600"
+        >
+          <YoutubeIcon class="size-5 md:size-6 text-red-600" />
+          <span class="text-red-600 font-medium">YouTube</span>
         </SocialButton>
     
         <!-- Instagram -->
